@@ -14,7 +14,8 @@
 
     <header></header>
     <main id="root">
-        <h1 v-bind:class="classeH1">{{name +" "+surname}}</h1>
+        <!-- <h1 v-bind:class="classeH1">{{name +" "+surname}}</h1> -->
+        <h1 v-bind:class="classeH1">{{`${name} ${surname}`}}</h1>
         <img v-bind:src="imgsrc" v-bind:alt="logoName">
 
     </main>
